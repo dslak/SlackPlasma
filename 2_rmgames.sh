@@ -1,7 +1,6 @@
 
-grep -r "game " $1 > list
-grep -r "Game " $1 >> list
-
+grep -r "game " ../5 > list
+grep -r "Game " ../5 >> list
 
 while read -r; do
   echo "rm ${REPLY%%:*}" >> rmlist
